@@ -5,5 +5,5 @@ from app.models.maintenance import MaintenanceRecord
 __all__ = [
     "Customer",
     "Equipment",
-    "Maintenance",
+    "MaintenanceRecord",
 ]

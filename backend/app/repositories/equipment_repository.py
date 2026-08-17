@@ -7,7 +7,10 @@ from app.models.equipment import Equipment
 
 class EquipmentRepository:
     """
-    Repository for Equipment database operations.
+    Repository responsible for Equipment database operations.
+
+    This repository does not commit transactions.
+    The service layer controls the transaction.
     """
 
     def create(self, db: Session, equipment: Equipment) -> Equipment:
